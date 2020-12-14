@@ -82,7 +82,7 @@ th{
     //$t=strtotime(date(Ymd));
     $mysqli->where("post_date",$t);
     $mysqli->where("status",1);
-    $spot_prices_raw = $mysqli->get("confab_intext_nseit.nse_spot_prices");
+    $spot_prices_raw = $mysqli->get("db_name.table_name");
 
     if(isset($spot_prices_raw) && count($spot_prices_raw) > 1){
 
